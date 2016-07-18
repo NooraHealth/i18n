@@ -1,0 +1,7 @@
+{
+  "helper_name": "_",
+  "supported_languages": ["english", "hindi", "kannada"],
+  "i18n_files_route": "/tap-i18n",
+  "cdn_path": null,
+  "preloaded_langs": ["english", "hindi", "kannada"]
+}

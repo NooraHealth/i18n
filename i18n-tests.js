@@ -1,11 +1,13 @@
-// Import Tinytest from the tinytest Meteor package.
-import { Tinytest } from "meteor/tinytest";
+import { chai } from 'meteor/practicalmeteor:chai';
+import 'meteor/noorahealth:i18n';
 
-// Import and rename a variable exported by i18n.js.
-import { name as packageName } from "meteor/noorahealth:i18n";
+should = chai.should();
 
-// Write your tests here!
-// Here is an example.
-Tinytest.add('i18n - example', function (test) {
-  test.equal(packageName, "i18n");
-});
+describe("Translations", function() {
+
+  it("should translate finish into FINISH in english"), (done)=> {
+    TAPi18n.setLanguage("english");
+    TAPi18n._("finish").should.equal("FINISH");
+  };
+        
+);
